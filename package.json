@@ -1,0 +1,73 @@
+{
+    "name": "@nodecfdi/eslint-config-nodecfdi",
+    "version": "0.1.0",
+    "description": "Eslint shared configuration for nodecfdi packages/libs",
+    "keywords": [
+        "nodecfdi",
+        "eslint",
+        "config",
+        "eslintconfig",
+        "lint",
+        "ts"
+    ],
+    "private": false,
+    "author": "OcelotlStudio <contacto@ocelotlstudio.com>",
+    "license": "MIT",
+    "main": "index.js",
+    "files": [
+        "index.js"
+    ],
+    "scripts": {
+        "prepare": "is-ci || husky install",
+        "format": "prettier --write --ignore-unknown '**/*'",
+        "format:check": "prettier --check --ignore-unknown '**/*'",
+        "release": "pnpm changeset publish"
+    },
+    "repository": "https://github.com/nodecfdi/eslint-config-nodecfdi",
+    "bugs": {
+        "url": "https://github.com/nodecfdi/eslint-config-nodecfdi/issues"
+    },
+    "homepage": "https://github.com/nodecfdi/eslint-config-nodecfdi",
+    "devDependencies": {
+        "@changesets/cli": "^2.26.2",
+        "@commitlint/cli": "^17.6.6",
+        "@nrsk/config-conventional": "^1.0.0",
+        "@typescript-eslint/eslint-plugin": "^5.61.0",
+        "@typescript-eslint/parser": "^5.61.0",
+        "eslint": "^8.44.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-import-resolver-typescript": "^3.5.5",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^16.0.1",
+        "eslint-plugin-tsdoc": "^0.2.17",
+        "eslint-plugin-unicorn": "^47.0.0",
+        "husky": "^8.0.3",
+        "is-ci": "^3.0.1",
+        "prettier": "^3.0.0",
+        "typescript": "^5.1.6"
+    },
+    "commitlint": {
+        "extends": [
+            "@nrsk/config-conventional"
+        ]
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "peerDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.61.0",
+        "@typescript-eslint/parser": "^5.61.0",
+        "eslint": "^8.44.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-import-resolver-typescript": "^3.5.5",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^16.0.1",
+        "eslint-plugin-tsdoc": "^0.2.17",
+        "eslint-plugin-unicorn": "^47.0.0",
+        "typescript": "^5.1.6"
+    }
+}

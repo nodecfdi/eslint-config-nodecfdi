@@ -1,0 +1,31 @@
+# Editor directories and files
+.vscode/*
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional tool caches
+.eslintcache
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Typescript
+*.tsbuildinfo
+
+# Testing
+/coverage
+
+# Pnpm
+.pnpm-debug.log
+
+# Production files
+dist
+temp
