@@ -20,7 +20,7 @@ module.exports = {
         'import/resolver': {
             typescript: {
                 alwaysTryTypes: true,
-                project: './tsconfig.json'
+                project: ['./tsconfig.json', './tests/tsconfig.json']
             },
             alias: {
                 extensions: ['.json']
