@@ -42,9 +42,6 @@ jobs:
             - name: Format source
               run: |
                   pnpm format:check
-            - name: Build package
-              run: |
-                  pnpm build
 
             - name: 'Consume changesets'
               if: github.event_name == 'push' && github.repository == 'nodecfdi/eslint-config-nodecfdi' && matrix.node == 16 && github.ref == 'refs/heads/main'
