@@ -546,6 +546,7 @@ module.exports = {
         // Import rules
         'import/default': 'error',
         'import/export': 'error',
+        'import/first': 'error',
         'import/no-absolute-path': 'error',
         'import/no-anonymous-default-export': 'error',
         'import/no-named-default': 'error',
@@ -574,6 +575,14 @@ module.exports = {
         'import/no-mutable-exports': 'error',
         'import/no-named-as-default-member': 'error',
         'import/no-named-as-default': 'error',
+        'import/order': [
+            'error',
+            {
+                'groups': ['builtin', 'external', 'parent', 'sibling', 'index'],
+                'newlines-between': 'never',
+                'warnOnUnassignedImports': true,
+            },
+        ],
         'import/no-unresolved': 'error',
 
         // Unicorn rules
