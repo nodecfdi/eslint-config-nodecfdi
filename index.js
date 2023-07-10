@@ -42,7 +42,6 @@ module.exports = {
     ],
     rules: {
         // Eslint rules
-        'comma-dangle': ['error', 'always-multiline'],
         'no-await-in-loop': 'error',
         'no-empty': [
             'error',
@@ -131,7 +130,7 @@ module.exports = {
         'no-useless-call': 'error',
         'no-useless-concat': 'error',
         'no-useless-return': 'error',
-        'no-void': 'error',
+        'no-void': ['error', { allowAsStatement: true }],
         'prefer-promise-reject-errors': [
             'error',
             {
@@ -156,12 +155,6 @@ module.exports = {
         'no-label-var': 'error',
         'no-restricted-globals': ['error', 'event'],
         'no-undef-init': 'error',
-        'no-undef': [
-            'error',
-            {
-                typeof: true,
-            },
-        ],
         'array-bracket-newline': ['error', 'consistent'],
         'array-bracket-spacing': ['error', 'never'],
         'array-element-newline': ['error', 'consistent'],
@@ -232,11 +225,9 @@ module.exports = {
         'no-whitespace-before-property': 'error',
         'no-trailing-spaces': 'error',
         'no-unneeded-ternary': 'error',
-        'object-curly-spacing': ['error', 'never'],
         'one-var': ['error', 'never'],
         'one-var-declaration-per-line': 'error',
         'operator-assignment': ['error', 'always'],
-        'operator-linebreak': ['error', 'before'],
         'padded-blocks': [
             'error',
             'never',
@@ -313,7 +304,6 @@ module.exports = {
                 enforceForClassMembers: true,
             },
         ],
-        'no-useless-constructor': 'error',
         'no-useless-rename': 'error',
         'no-var': 'error',
         'object-shorthand': [
