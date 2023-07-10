@@ -1,5 +1,12 @@
 # @nodecfdi/eslint-config-nodecfdi ChangeLog
 
+## 0.1.2
+
+### Patch Changes - Problems with eslint - prettier
+
+- Resolve problems with override rules eslint - prettier
+- Resolve problems with def variables defined by typescript
+
 ## 0.1.1
 
 ### Patch Changes - Missing rules
