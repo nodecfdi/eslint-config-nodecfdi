@@ -4,9 +4,8 @@
     "tabWidth": 4,
     "useTabs": false,
     "singleQuote": true,
-    "trailingComma": "none",
+    "trailingComma": "es5",
     "bracketSpacing": true,
-    "bracketSameLine": false,
     "arrowParens": "always",
     "quoteProps": "consistent",
     "endOfLine": "lf"
