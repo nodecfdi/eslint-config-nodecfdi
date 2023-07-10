@@ -157,7 +157,6 @@ module.exports = {
         'no-undef-init': 'error',
         'array-bracket-newline': ['error', 'consistent'],
         'array-bracket-spacing': ['error', 'never'],
-        'array-element-newline': ['error', 'consistent'],
         'brace-style': [
             'error',
             '1tbs',
@@ -212,7 +211,6 @@ module.exports = {
         'new-parens': 'error',
         'no-array-constructor': 'error',
         'no-lonely-if': 'error',
-        'no-mixed-operators': 'error',
         'no-multi-assign': 'error',
         'no-multiple-empty-lines': [
             'error',
