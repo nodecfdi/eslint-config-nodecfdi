@@ -7,9 +7,7 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:n/recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        'plugin:@typescript-eslint/strict',
+        'plugin:@typescript-eslint/strict-type-checked',
         'plugin:unicorn/recommended',
         'prettier',
     ],
