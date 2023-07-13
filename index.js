@@ -9,7 +9,7 @@ module.exports = {
         'plugin:n/recommended',
         'plugin:@typescript-eslint/strict-type-checked',
         'plugin:unicorn/recommended',
-        'prettier',
+        'plugin:prettier/recommended',
     ],
     settings: {
         'import/parsers': {
@@ -81,7 +81,6 @@ module.exports = {
         'default-case': 'error',
         'default-case-last': 'error',
         'dot-notation': 'error',
-        'dot-location': ['error', 'property'],
         'eqeqeq': 'error',
         'grouped-accessor-pairs': ['error', 'getBeforeSet'],
         'guard-for-in': 'error',
@@ -99,14 +98,12 @@ module.exports = {
         'no-extend-native': 'error',
         'no-extra-bind': 'error',
         'no-extra-label': 'error',
-        'no-floating-decimal': 'error',
         'no-implicit-coercion': 'error',
         'no-implicit-globals': 'error',
         'no-implied-eval': 'error',
         'no-iterator': 'error',
         'no-labels': 'error',
         'no-lone-blocks': 'error',
-        'no-multi-spaces': 'error',
         'no-multi-str': 'error',
         'no-new-wrappers': 'error',
         'no-nonoctal-decimal-escape': 'error',
@@ -142,43 +139,10 @@ module.exports = {
             },
         ],
         'radix': 'error',
-        'wrap-iife': [
-            'error',
-            'inside',
-            {
-                functionPrototypeMethods: true,
-            },
-        ],
         'yoda': 'error',
         'no-label-var': 'error',
         'no-restricted-globals': ['error', 'event'],
         'no-undef-init': 'error',
-        'array-bracket-newline': ['error', 'consistent'],
-        'array-bracket-spacing': ['error', 'never'],
-        'brace-style': [
-            'error',
-            '1tbs',
-            {
-                allowSingleLine: false,
-            },
-        ],
-        'comma-spacing': [
-            'error',
-            {
-                before: false,
-                after: true,
-            },
-        ],
-        'comma-style': ['error', 'last'],
-        'computed-property-spacing': [
-            'error',
-            'never',
-            {
-                enforceForClassMembers: true,
-            },
-        ],
-        'eol-last': 'error',
-        'func-call-spacing': ['error', 'never'],
         'func-name-matching': [
             'error',
             {
@@ -186,51 +150,18 @@ module.exports = {
             },
         ],
         'func-names': ['error', 'never'],
-        'function-call-argument-newline': ['error', 'consistent'],
-        'key-spacing': [
-            'error',
-            {
-                beforeColon: false,
-                afterColon: true,
-            },
-        ],
-        'keyword-spacing': 'error',
-        'linebreak-style': ['error', 'unix'],
-        'lines-between-class-members': [
-            'error',
-            'always',
-            {
-                exceptAfterSingleLine: true,
-            },
-        ],
+        'lines-between-class-members': 'error',
         'max-depth': 'warn',
         'max-nested-callbacks': ['warn', 4],
         'max-statements-per-line': 'error',
-        'new-parens': 'error',
         'no-array-constructor': 'error',
         'no-lonely-if': 'error',
         'no-multi-assign': 'error',
-        'no-multiple-empty-lines': [
-            'error',
-            {
-                max: 1,
-            },
-        ],
         'no-negated-condition': 'error',
         'no-new-object': 'error',
-        'no-whitespace-before-property': 'error',
-        'no-trailing-spaces': 'error',
         'no-unneeded-ternary': 'error',
         'one-var': ['error', 'never'],
-        'one-var-declaration-per-line': 'error',
         'operator-assignment': ['error', 'always'],
-        'padded-blocks': [
-            'error',
-            'never',
-            {
-                allowSingleLineBlocks: false,
-            },
-        ],
         'padding-line-between-statements': [
             'error',
             {
@@ -241,29 +172,6 @@ module.exports = {
         ],
         'prefer-exponentiation-operator': 'error',
         'prefer-object-spread': 'error',
-        'quote-props': ['error', 'consistent'],
-        'quotes': ['error', 'single'],
-        'semi-spacing': [
-            'error',
-            {
-                before: false,
-                after: true,
-            },
-        ],
-        'semi-style': ['error', 'last'],
-        'semi': ['error', 'always'],
-        'space-before-blocks': ['error', 'always'],
-        'space-before-function-paren': [
-            'error',
-            {
-                anonymous: 'always',
-                named: 'never',
-                asyncArrow: 'always',
-            },
-        ],
-        'space-in-parens': ['error', 'never'],
-        'space-infix-ops': 'error',
-        'space-unary-ops': 'error',
         'spaced-comment': [
             'error',
             'always',
@@ -279,19 +187,7 @@ module.exports = {
                 },
             },
         ],
-        'switch-colon-spacing': [
-            'error',
-            {
-                after: true,
-                before: false,
-            },
-        ],
-        'template-tag-spacing': ['error', 'never'],
-        'unicode-bom': ['error', 'never'],
         'arrow-body-style': 'error',
-        'arrow-parens': 'error',
-        'arrow-spacing': 'error',
-        'generator-star-spacing': ['error', 'both'],
         'no-constant-binary-expression': 'error',
         'no-new-native-nonconstructor': 'error',
         'no-useless-computed-key': [
@@ -344,10 +240,7 @@ module.exports = {
         'prefer-object-has-own': 'error',
         'prefer-rest-params': 'error',
         'prefer-spread': 'error',
-        'rest-spread-spacing': ['error', 'never'],
         'symbol-description': 'error',
-        'template-curly-spacing': 'error',
-        'yield-star-spacing': ['error', 'both'],
 
         // TSDOC
         'tsdoc/syntax': 'warn',
@@ -454,9 +347,6 @@ module.exports = {
                 fixStyle: 'inline-type-imports',
             },
         ],
-        'func-call-spacing': 'off',
-        '@typescript-eslint/func-call-spacing': 'error',
-        '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/member-ordering': 'error',
         'no-dupe-class-members': 'off',
         '@typescript-eslint/no-dupe-class-members': 'error',
@@ -503,8 +393,6 @@ module.exports = {
         ],
         '@typescript-eslint/prefer-readonly': 'error',
         '@typescript-eslint/promise-function-async': 'error',
-        'quotes': 'off',
-        '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
         'no-return-await': 'off',
         '@typescript-eslint/return-await': 'error',
         '@typescript-eslint/require-array-sort-compare': [
@@ -513,8 +401,6 @@ module.exports = {
                 ignoreStringArrays: true,
             },
         ],
-        'semi': 'off',
-        '@typescript-eslint/semi': ['error', 'always'],
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
         '@typescript-eslint/prefer-regexp-exec': 'error',
         '@typescript-eslint/no-unused-vars': [
@@ -686,5 +572,21 @@ module.exports = {
         'eslint-comments/no-duplicate-disable': 'error',
         'eslint-comments/no-unused-disable': 'error',
         'eslint-comments/no-unused-enable': 'error',
+
+        // Override all
+        'prettier/prettier': [
+            'error',
+            {
+                tabWidth: 4,
+                useTabs: false,
+                semi: true,
+                singleQuote: true,
+                quoteProps: 'consistent',
+                trailingComma: 'all',
+                bracketSpacing: true,
+                arrowParens: 'always',
+                endOfLine: 'lf',
+            },
+        ],
     },
 };
