@@ -246,7 +246,6 @@ module.exports = {
         'tsdoc/syntax': 'warn',
 
         // Typescript rules
-        // Typescript rules
         '@typescript-eslint/array-type': [
             'error',
             {
