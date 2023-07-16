@@ -1,6 +1,6 @@
 {
     "name": "@nodecfdi/eslint-config-nodecfdi",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Eslint shared configuration for nodecfdi packages/libs",
     "keywords": [
         "nodecfdi",

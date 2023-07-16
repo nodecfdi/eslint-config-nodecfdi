@@ -1,5 +1,12 @@
 # @nodecfdi/eslint-config-nodecfdi ChangeLog
 
+## 0.1.5
+
+### Patch Changes - Maintenance 16/07/2023
+
+- Maintenance with latest releases
+- Update dependencies
+
 ## 0.1.3
 
 ### Patch Changes - Overlap rules Eslint-Prettier
